@@ -1,5 +1,6 @@
 import { day1Meta } from "./day-1/day-1";
 import { day2Meta } from "./day-2/day-2";
+import { day3Meta } from "./day-3/day-3";
 
 export type AdventOfCodeDayComputeFunctionInputs<Type extends AdventOfCodeDayComputeFunctionType = AdventOfCodeDayComputeFunctionType> =
   Type extends "integers"
@@ -64,6 +65,7 @@ export const areSolutionsEqual = (solution: AdventOfCodeDayComputeFunctionOutput
 const daysMeta: readonly Omit<AdventOfCodeDay<AdventOfCodeDaySectionMeta>, 'dayNumber'>[] = [
   day1Meta,
   day2Meta,
+  day3Meta,
 ];
 export const days = daysMeta.map(({ sections, ...day }, i) => ({
   ...day,
